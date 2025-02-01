@@ -17,7 +17,7 @@ class SitesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create site" do
     assert_difference("Site.count") do
-      post sites_url, params: { site: { address_line_1: @site.address_line_1, address_line_2: @site.address_line_2, address_line_3: @site.address_line_3, address_line_4: @site.address_line_4, name: @site.name, postcode: @site.postcode } }
+      post sites_url, params: { site: { address_line_1: @site.address_line_1, address_line_2: @site.address_line_2, address_line_3: @site.address_line_3, name: @site.name, postcode: @site.postcode } }
     end
 
     assert_redirected_to site_url(Site.last)
@@ -34,7 +34,7 @@ class SitesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update site" do
-    patch site_url(@site), params: { site: { address_line_1: @site.address_line_1, address_line_2: @site.address_line_2, address_line_3: @site.address_line_3, address_line_4: @site.address_line_4, name: @site.name, postcode: @site.postcode } }
+    patch site_url(@site), params: { site: { address_line_1: @site.address_line_1, address_line_2: @site.address_line_2, address_line_3: @site.address_line_3, name: @site.name, postcode: @site.postcode } }
     assert_redirected_to site_url(@site)
   end
 

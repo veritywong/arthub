@@ -24,3 +24,7 @@ Access.create(site: building_77, step_free: false, lift_type: 'passenger')
 Access.create(site: og_deptford, step_free: false, lift_type: 'hoist_lift')
 Access.create(site: mornington, step_free: false)
 
+puts "Studio sites created"
+
+
+

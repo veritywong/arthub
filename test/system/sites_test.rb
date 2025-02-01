@@ -17,7 +17,6 @@ class SitesTest < ApplicationSystemTestCase
     fill_in "Address line 1", with: @site.address_line_1
     fill_in "Address line 2", with: @site.address_line_2
     fill_in "Address line 3", with: @site.address_line_3
-    fill_in "Address line 4", with: @site.address_line_4
     fill_in "Name", with: @site.name
     fill_in "Postcode", with: @site.postcode
     click_on "Create Site"
@@ -33,7 +32,6 @@ class SitesTest < ApplicationSystemTestCase
     fill_in "Address line 1", with: @site.address_line_1
     fill_in "Address line 2", with: @site.address_line_2
     fill_in "Address line 3", with: @site.address_line_3
-    fill_in "Address line 4", with: @site.address_line_4
     fill_in "Name", with: @site.name
     fill_in "Postcode", with: @site.postcode
     click_on "Update Site"
