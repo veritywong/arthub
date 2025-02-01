@@ -13,7 +13,7 @@
 
   <div>
     <%= form.label :site_id, style: "display: block" %>
-    <%= form.number_field :site_id %>
+    <%= form.select :site_id, @sites.map {|site| [site.name, site.id]} %>
   </div>
 
   <div>

@@ -13,10 +13,12 @@ class StudiosController < ApplicationController
   # GET /studios/new
   def new
     @studio = Studio.new
+    @sites = Site.all
   end
 
   # GET /studios/1/edit
   def edit
+    @sites = Site.all
   end
 
   # POST /studios or /studios.json
