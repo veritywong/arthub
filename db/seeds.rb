@@ -15,15 +15,12 @@ lewisham = Borough.create(name: 'Lewisham')
 # Create studio sites
 og_woolwich = Site.create(borough: woolwich, name: 'Building 28', address_line_1: '28 Bowater Road', address_line_2: 'Westminster Industrial Estate', postcode: 'SE18 5TF')
 building_77 = Site.create(borough: woolwich, name: 'Building 77', address_line_1: '77 Bowater Road', address_line_2: 'Westminster Industrial Estate', postcode: 'SE18 5TF')
-og_deptford = Site.create(borough: woolwich, name: 'Building 77', address_line_1: '77 Bowater Road', address_line_2: 'Westminster Industrial Estate', postcode: 'SE18 5TF')
-mornington = Site.create(borough: woolwich, name: 'Building 77', address_line_1: '77 Bowater Road', address_line_2: 'Westminster Industrial Estate', postcode: 'SE18 5TF')
+og_deptford = Site.create(borough: lewisham, name: 'Creekside', address_line_1: '5-9 Creekside', postcode: 'SE8 4SA')
+mornington = Site.create(borough: lewisham, name: 'Mornington Centre', address_line_1: 'Stanley Street', postcode: 'SE8 4BL')
 
 # Create access info
+Access.create(site: og_woolwich, step_free: false, lift_type: 'large_goods')
+Access.create(site: building_77, step_free: false, lift_type: 'passenger')
+Access.create(site: og_deptford, step_free: false, lift_type: 'hoist_lift')
+Access.create(site: mornington, step_free: false)
 
-
-Studios + Printmaking, Ceramics, Carpentry
-Building 28 (Large Goods Lift)
-Building 77 (Passenger Lift)
-Westminster Industrial Estate, Woolwich, SE18 5TF (No step free access)
-Stations: Charlton: 15 mins walk
-Buses: 161 177 180 472

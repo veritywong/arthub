@@ -1,0 +1,47 @@
+<%= form_with(model: studio) do |form| %>
+  <% if studio.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(studio.errors.count, "error") %> prohibited this studio from being saved:</h2>
+
+      <ul>
+        <% studio.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :site_id, style: "display: block" %>
+    <%= form.number_field :site_id %>
+  </div>
+
+  <div>
+    <%= form.label :width, style: "display: block" %>
+    <%= form.text_field :width %>
+  </div>
+
+  <div>
+    <%= form.label :length, style: "display: block" %>
+    <%= form.text_field :length %>
+  </div>
+
+  <div>
+    <%= form.label :height, style: "display: block" %>
+    <%= form.text_field :height %>
+  </div>
+
+  <div>
+    <%= form.label :window, style: "display: block" %>
+    <%= form.check_box :window %>
+  </div>
+
+  <div>
+    <%= form.label :sink, style: "display: block" %>
+    <%= form.check_box :sink %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
