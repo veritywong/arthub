@@ -26,5 +26,7 @@ Access.create(site: mornington, step_free: false)
 
 puts "Studio sites created"
 
+# Factilities - kiln, print - exposure unit, gallery, project space 
+# Go rails - guy made a site to host rails ? 
 
 
